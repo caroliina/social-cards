@@ -2,8 +2,8 @@
   "name": "SocialCards",
   "displayName": "SocialCards",
   "expo": {
-    "name": "My app",
-    "slug": "my-app",
+    "name": "Social Cards",
+    "slug": "social-cards",
     "sdkVersion": "31.0.0",
     "privacy": "public"
   }

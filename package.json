@@ -1,17 +1,9 @@
 {
   "name": "SocialCards",
-  "author": "Futurice",
-  "description": "React Native App Starter Kit for Android and iOS",
-  "license": "MIT",
-  "homepage": "http://getpepperoni.com",
-  "bugs": "https://github.com/futurice/pepperoni-app-kit/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/futurice/pepperoni-app-kit"
-  },
+  "author": "Caroliina",
+  "description": "",
   "keywords": [
     "React Native",
-    "Starter Kit",
     "Bitrise",
     "Redux",
     "Auth0"
@@ -47,8 +39,9 @@
     "react": "^16.6.3",
     "react-native": "^0.57.1",
     "react-native-camera": "^1.4.3",
+    "react-native-qrcode": "^0.2.7",
     "react-native-qrcode-scanner": "^1.1.0",
-    "react-native-vector-icons": "^4.4.2",
+    "react-native-vector-icons": "^5.0.0",
     "react-navigation": "1.0.0-beta.11",
     "react-redux": "^5.0.6",
     "redux": "^3.4.0",
@@ -71,6 +64,8 @@
     "eslint": "^3.10.1",
     "eslint-plugin-babel": "^3.2.0",
     "eslint-plugin-react": "^6.7.1",
+    "exp": "^57.2.1",
+    "expo": "^31.0.5",
     "fetch-mock": "^5.5.0",
     "istanbul": "1.0.0-alpha.2",
     "jest": "^17.0.2",
