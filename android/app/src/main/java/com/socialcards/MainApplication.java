@@ -1,4 +1,4 @@
-package com.pepperoniapptemplate;
+package com.socialcards;
 
 import android.app.Application;
 
