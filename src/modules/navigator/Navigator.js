@@ -24,7 +24,7 @@ export const MainScreenNavigator = TabNavigator({
 });
 
 MainScreenNavigator.navigationOptions = {
-  title: 'Pepperoni App Template',
+  title: 'SOCIAL CARDS',
   headerTitleStyle: {color: 'white'},
   headerStyle: {
     backgroundColor: headerColor,

@@ -3,10 +3,16 @@ import PropTypes from 'prop-types';
 import {
   Button,
   View,
-  StyleSheet
+  StyleSheet,
+  AppRegistry,
+  Text,
+  NavigatorIOS,
+  TouchableOpacity,
+  Linking,
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import QRCodeScanner from 'react-native-qrcode-scanner';
 
 const color = () => Math.floor(255 * Math.random());
 
@@ -15,6 +21,38 @@ const color = () => Math.floor(255 * Math.random());
  * @TODO remove this module in a live application.
  */
 class ColorView extends Component {
+
+  onSuccess(e) {
+    Linking.openURL(e.data).catch(err => console.error('An error occured', err));
+  }
+
+  render() {
+    return (
+      <NavigatorIOS
+        initialRoute={{
+          component: QRCodeScanner,
+          title: 'Scan Code',
+          passProps: {
+            onRead: this.onSuccess.bind(this),
+            topContent: (
+              <Text style={styles.centerText}>
+                Go to <Text style={styles.textBold}>wikipedia.org/wiki/QR_code</Text> on your computer and scan the QR code.
+              </Text>
+            ),
+            bottomContent: (
+              <TouchableOpacity style={styles.buttonTouchable}>
+                <Text style={styles.buttonText}>OK. Got it!</Text>
+              </TouchableOpacity>
+            ),
+          },
+        }}
+        style={{ flex: 1 }}
+      />
+    );
+  }
+
+
+  /*
   static displayName = 'ColorView';
 
   static navigationOptions = {
@@ -52,6 +90,7 @@ class ColorView extends Component {
       </View>
     );
   }
+  */
 }
 
 const styles = StyleSheet.create({
